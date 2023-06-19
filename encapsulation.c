@@ -22,14 +22,3 @@ double getDistance(struct Point *p1, struct Point *p2) {
 
   return sqrt(dx * dx + dy * dy);
 }
-
-int main(void) {
-  struct Point *p1 =
-      makePoint(0.0, 3.0); // struct Point p1 = {.x = 0.0, .y = 3.0};
-  struct Point *p2 =
-      makePoint(4.0, 0.0); // struct Point p2 = {.x = 4.0, .y = 0.0};
-  double distance = getDistance(p1, p2);
-  printf("Distance: %f\n", distance);
-
-  return 0;
-}
