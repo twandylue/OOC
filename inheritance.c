@@ -21,15 +21,3 @@ struct LabeledPoint *makeLabeledPoint(double x, double y, char *label) {
 void setLabel(struct LabeledPoint *lp, char *label) { lp->name = label; }
 
 char *getLabel(struct LabeledPoint *lp) { return lp->name; }
-
-/* int main(void) { */
-/*   struct LabeledPoint *origin = makeLabeledPoint(0, 0, "origin"); */
-/*   struct LabeledPoint *lowerLeft = makeLabeledPoint(-1.0, -1.0, "lowerLeft");
- */
-
-/*   double r = getDistance((struct Point *)origin, (struct Point *)lowerLeft);
- */
-/*   printf("Distance: %f\n", r); */
-
-/*   return 0; */
-/* } */
